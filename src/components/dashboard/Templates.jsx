@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { 
   Rocket, Calendar, Star, Lightbulb, Users, Tag, 
@@ -9,7 +8,6 @@ import {
 } from 'lucide-react';
 
 const Templates = ({ onStatsUpdate }) => {
-  const { t } = useTranslation(['common', 'templates']);
   const [templates, setTemplates] = useState([]);
   const [categories, setCategories] = useState([]);
   const [loading, setLoading] = useState(true);
